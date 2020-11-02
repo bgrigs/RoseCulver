@@ -15,6 +15,7 @@ const pages = [
 //Pick the relevant tags
 const nextTag = document.querySelector(".next");
 const previousTag = document.querySelector(".prev");
+const randomTag = document.querySelector('.random')
 const outputTag = document.querySelector("h2");
 const circleTag = document.querySelector('.circle');
 const bodyTag = document.querySelector('body');
@@ -37,6 +38,12 @@ const previous = function() {
     updateSection(); 
 }
 
+//Pick a random slide 
+const random = function() {
+    pageNumber = Math.floor(Math.random() * pages.length);
+    updateSection();
+}
+
 //Update section's content and style
 const updateSection = function() {
     outputTag.innerHTML = pages[pageNumber].copy;
@@ -54,6 +61,8 @@ previousTag.addEventListener('click', function() {
     previous();
 }) 
 
-
-// Random
+//On clic of 
+randomTag.addEventListener('click', function() {
+    random();
+})
 
