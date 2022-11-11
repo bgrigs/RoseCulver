@@ -4,7 +4,7 @@ let pageNumber = 0;
 //Content for pages 
 const pages = [
     {copy: "a Brooklyn-based graphic designer", background: '#edc7a9', circle: '#3e78ed'},
-    {copy: "Kanye West's biggest fan", background: '#a1fffe', 
+    {copy: "Harry Styles' biggest fan", background: '#a1fffe', 
     circle: '#e34a47'},
     {copy: "looking for a job at the start of October", background: '#d3c7f3',
     circle: '#f7fe00'},
